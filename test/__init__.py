@@ -8,4 +8,8 @@ def create_app():
     def index():
         return 'hello,world'
 
+    @app.route('/login')
+    def login():
+        return 'login'
+
     return app
